@@ -1,8 +1,82 @@
 /*------------
+    DEBUG
+--------------*/
+.box {
+    background-color: #006cfa;
+    padding: .625rem;
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+}
+.box-inner {
+    background-color: #00e165;
+    padding: .625rem;
+    color: white;
+    text-align: center;
+    border: 1px solid #006cfa;
+}
+/*------------
     RESET
 --------------*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+/*------------
+    CONTAINERS
+--------------*/
+.container {
+    max-width: 90rem;
+    width: 100%;
+    margin: 0 auto;
+}
+/*------------
+    CORE
+--------------*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+/*------------
+    COLS
+--------------*/
+[class*='col-'] {
+    flex: 0 0 auto; /* 0: grow, 0: shrink, auto: flex-basis */
+}
+.col-1 {
+    width: calc((100% / 12) * 1);
+}
+.col-2 {
+    width: calc((100% / 12) * 2); /* 16.67% */
+}
+.col-3 {
+    width: calc((100% / 12) * 3); /* 25% */
+}
+.col-4 {
+    width: calc((100% / 12) * 4); /* 33,33% */
+}
+.col-5 {
+    width: calc((100% / 12) * 5); /**/
+}
+.col-6 {
+    width: calc((100% / 12) * 6); /* 50% */
+}
+.col-7 {
+    width: calc((100% / 12) * 7); /**/
+}
+.col-8 {
+    width: calc((100% / 12) * 8); /**/
+}
+.col-9 {
+    width: calc((100% / 12) * 9); /* 75% */
+}
+.col-10 {
+    width: calc((100% / 12) * 10); /**/
+}
+.col-11 {
+    width: calc((100% / 12) * 11); /**/
+}
+.col-12 {
+    width: calc((100% / 12) * 12); /* 100% */
 }
